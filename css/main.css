@@ -1,3 +1,120 @@
+/* 폰트 */
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+/* 배경 이미지 */
+body {
+  height: 100vh;
+  background-image: url('../img/3.jpg');
+  background-repeat : no-repeat;
+  background-size : cover;
+}
+
+
 .hidden {
   display: none;
+}
+
+
+/* 유저 이름 */
+#name-form {
+  text-align: right;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+#name-form input {
+  width: 500px;
+  line-height: 80px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-right: 10px;
+  font-size: 30px;
+  color: #999;
+}
+#name-form input:hover {
+  width: 550px;
+  line-height: 90px;
+  transition: 0.2s;
+}
+#name-form input:focus {
+  width: 550px;
+  line-height: 90px;
+  transition: 0.2s;
+}
+#name-form input::placeholder {
+  font-size: 20px;
+  color: #bbb;
+  padding-left: 10px;
+}
+
+#title-name {
+  text-align: right;
+  font-size: 70px;
+  margin-top: 70px;
+  margin-right: 50px;
+}
+
+
+/* 이동 아이콘 */
+#icon {
+  text-align: right;
+  color: #456;
+}
+#icon span:first-child {
+  font-size: 50px;
+  margin: 10px 120px 50px 0;
+}
+#icon span:first-child:hover {
+  transform:scale(1.1);
+  transition: 0.1s;
+}
+#icon span:last-child {
+  font-size: 50px;
+  margin: 10px 90px 50px 120px;
+}
+#icon span:last-child:hover {
+  transform:scale(1.1);
+  transition: 0.1s;
+}
+
+
+/* 명언 */
+#quotes {
+  text-align: right;
+  margin-right: 20px;
+  color: #666;
+}
+#quotes span:first-child {
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #999;
+}
+#quotes span:last-child {
+  font-size: 15px;
+}
+
+
+/* 시계 */
+#clock {
+  position: fixed;
+  left: 30px;
+  bottom: 10px;
+  color: #555;
+  padding-top: 10px;
+  border-top: 1px solid white;
+}
+
+
+/* 날씨 */
+#weather {
+  position: fixed;
+  left: 20px;
+  bottom: 80px;
+  color: #444;
+}
+#weather img {
+  position: fixed;
+  left: 20px;
+  bottom: 80px;
 }

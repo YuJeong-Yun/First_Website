@@ -10,7 +10,7 @@ const HIDDEN_CLASS = "hidden";
 // 화면에 인사말 출력
 function showGreeting(userinput) {
   titleName.classList.remove(HIDDEN_CLASS);
-  titleName.innerText = `Hello ${userinput}`;
+  titleName.innerText = `HELLO ${userinput} :)`;
 }
 
 // 폼이 submit되면 이름 저장 & showGreeting 함수 호출
