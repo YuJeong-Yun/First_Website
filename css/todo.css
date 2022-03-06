@@ -1,6 +1,6 @@
 /* 폰트 */
 * {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'IBM Plex Sans KR', sans-serif;
 }
 /* 배경 이미지 */
 body {
@@ -8,4 +8,177 @@ body {
   background-image: url('../img/todo.jpg');
   background-repeat : no-repeat;
   background-size : cover;
+  overflow: hidden;
+}
+.hidden {
+  display: none;
+}
+.lineThrough {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+
+
+/* To-do 제목 */
+#todo-form h1 {
+  color: #fff;
+  margin: 0;
+  position: fixed;
+  left: 27.5vw;
+  top: 5vh;
+}
+/* todo 입력창 */
+#todo-form input {
+  box-sizing: border-box;
+  position: fixed;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 17vh;
+  padding: 0 0 0 2%;
+
+  width: 45vw;
+  min-width: 300px;
+  max-width: 800px;
+  height: 8vh;
+  
+  border: none;
+  border-radius: 5px;
+}
+#todo-form input::placeholder {
+  color: #bbb;
+}
+/* + 아이콘 */
+#todo-form #plusIcon {
+  position: fixed;
+  top: 21.2vh;
+  transform:translateY(-50%);
+  right: 30vw;
+
+  font-size: 30px;
+  color: #28f;
+}
+#todo-form #plusIcon:hover {
+  color: #06d;
+}
+/* 구분선 */
+#line {
+  width: 50vw;
+  height: 1px;
+  position: fixed;
+  margin: 0 auto;
+  top: 28vh;
+  left: 0;
+  right: 0;
+  background-color: #fff;  
+  border: 0;
+}
+
+
+
+/* todo list 배경*/
+#todo-Box {
+  position: fixed;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 33%;
+  bottom: 0;
+
+  width: 45vw;
+  min-width: 300px;
+  max-width: 800px;
+  height: 50vh;
+  background-color: #fff;
+  opacity: 0.95;
+  border-radius: 5px;
+  overflow: scroll;
+}
+/* 스크롤바 숨기기 */
+#todo-Box::-webkit-scrollbar {
+	display:none;
+}
+/* todo list */
+#todo-Box #todo-list {
+  width: 75%;
+  padding-left: 10%;
+  color: #666;
+  font-size: 14px;
+}
+#todo-Box #todo-list li {
+  position: relative;
+  margin: 5% 0;
+  list-style: none;
+  border-bottom: 1px #efefef solid;
+}
+#todo-Box #todo-list li input{
+  position: absolute;
+  left: -8%;
+  top: 50%;
+  transform:translateY(-50%);
+}
+#todo-Box #todo-list li span.material-icons {
+  position: absolute;
+  right: -10%;
+  top: 50%;
+  transform:translateY(-50%);
+  color: #888;
+  font-size: 20px;
+}
+#todo-Box #todo-list li span.material-icons:hover {
+  color: #333;
+}
+
+
+/* 이동 아이콘 */
+#icon {
+  position: fixed;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  text-align: center;
+}
+#icon a {
+  text-decoration: none;
+  color: inherit;
+}
+#icon a span {
+  color: #fff;
+  margin: 0 2%;
+  font-size: 35px;
+}
+#icon a span:hover {
+  color: #dfdfdf;
+  transform:scale(1.1);
+}
+
+
+
+
+/* 시계 */
+#clock {
+  position: fixed;
+  left: 1%;
+  bottom: 1%;
+  margin: 0;
+  color: #fff;
+  padding-top: 0.1%;
+  border-top: 1px solid white;
+  font-size: 17px;
+}
+/* 날씨 */
+#weather {
+  position: fixed;
+  left: 1%;
+  bottom: 7%;
+  color: #fff;
+  font-size: 13px;
+}
+#weather img {
+  position: absolute;
+  left: 1%;
+  bottom: 9%;
+  width: 80px;
 }

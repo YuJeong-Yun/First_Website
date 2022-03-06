@@ -6,16 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css/todo.css">
-  <title>Document</title>
+  <title>To-Do</title>
 </head>
 <body>
   <form id="todo-form">
-    <input max-length="40" type="text">
+    <h1>To-do</h1>
+    <input maxlength="50" placeholder="Please enter your To-do" type="text">
+    <span id="plusIcon" class="material-icons">add_circle</span>
   </form>
-  <ul id="todo-list"></ul>
+  <hr id="line">
+  <div id="todo-Box" class="hidden">
+    <ul id="todo-list"></ul>
+  </div>
+  <div id="icon">
+    <a href="index.html">
+      <span id="home" class="material-icons">home</span>
+    </a>
+    <a href="diary.html">
+      <span id="diary" class="material-icons">edit_calendar</span>
+    </a>
+  </div>
+  <div id="weather">
+    <span></span>
+    <span></span>
+    <img src="" alt="날씨">
+  </div>
+  <h2 id="clock">00:00:00</h2>
+  <script src="js/clock.js"></script>
+  <script src="js/weather.js"></script>
   <script src="js/todo.js"></script>
 </body>
 </html>

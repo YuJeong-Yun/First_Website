@@ -17,28 +17,26 @@ body {
 /* 유저 이름 입력 */
 #name-form {
   text-align: right;
-  margin-bottom: 30px;
-  margin-right: 20px;
+  margin-bottom: 3%;
+  margin-right: 2%;
 }
 #name-form input {
-  width: 500px;
-  line-height: 80px;
+  width: 35%;
+  line-height: 50px;
   border: none;
   border-radius: 10px;
-  margin-top: 50px;
-  margin-right: 10px;
+  margin-top: 4%;
   font-size: 30px;
   color: #666;
 }
 #name-form input:hover {
-  width: 550px;
-  line-height: 90px;
+  width: 37%;
+  line-height: 55px;
   transition: 0.2s;
 }
 #name-form input:focus {
-  width: 550px;
-  line-height: 90px;
-  transition: 0.2s;
+  width: 37%;
+  line-height: 55px;
 }
 #name-form input::placeholder {
   font-size: 20px;
@@ -48,11 +46,12 @@ body {
 /* 인사말 출력 */
 #title-name {
   text-align: right;
-  font-size: 70px;
-  margin-top: 70px;
-  margin-right: 50px;
+  font-size: 40px;
+  margin-top: 3%;
+  margin-right: 3%;
   color: #456;
 }
+
 
 
 
@@ -66,8 +65,8 @@ body {
   color: inherit;
 }
 #icon span {
-  font-size: 50px;
-  margin: 10px 90px 50px 130px;
+  font-size: 30px;
+  margin: 0.5% 5% 3% 6%;
 }
 #icon a span:hover {
   transform:scale(1.1);
@@ -79,16 +78,16 @@ body {
 /* 명언 */
 #quotes {
   text-align: right;
-  margin-right: 20px;
+  margin-right: 2%;
   color: #666;
 }
 #quotes span:first-child {
-  font-size: 20px;
-  padding-bottom: 10px;
+  font-size: 13px;
+  padding-bottom: 1%;
   border-bottom: 1px dashed #999;
 }
 #quotes span:last-child {
-  font-size: 15px;
+  font-size: 11px;
 }
 
 
@@ -96,24 +95,25 @@ body {
 /* 시계 */
 #clock {
   position: fixed;
-  left: 30px;
-  bottom: 10px;
+  left: 1%;
+  bottom: 1%;
+  margin: 0;
   color: #555;
-  padding-top: 10px;
-  border-top: 1px solid white;
+  padding-top: 0.1%;
+  border-top: 1px solid #fff;
+  font-size: 17px;
 }
-
-
-
 /* 날씨 */
 #weather {
   position: fixed;
-  left: 20px;
-  bottom: 80px;
-  color: #444;
+  left: 1%;
+  bottom: 7%;
+  color: #555;
+  font-size: 13px;
 }
 #weather img {
-  position: fixed;
-  left: 20px;
-  bottom: 80px;
+  position: absolute;
+  left: 1%;
+  bottom: 9%;
+  width: 80px;
 }
