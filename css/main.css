@@ -1,6 +1,7 @@
 /* 폰트 */
 * {
   font-family: 'Ubuntu', sans-serif;
+  box-sizing:content-box;
 }
 /* 배경 이미지 */
 body {
