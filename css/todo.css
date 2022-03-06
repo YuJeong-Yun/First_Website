@@ -1,7 +1,7 @@
 /* 폰트 */
 * {
   font-family: 'IBM Plex Sans KR', sans-serif;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 /* 배경 이미지 */
 body {
@@ -27,11 +27,11 @@ body {
   margin: 0;
   position: fixed;
   left: 27.5vw;
-  top: 5vh;
+  top: 7vh;
+  font-size: 40px;
 }
 /* todo 입력창 */
 #todo-form input {
-  box-sizing: border-box;
   position: fixed;
   margin: 0 auto;
   left: 0;
@@ -46,18 +46,20 @@ body {
   
   border: none;
   border-radius: 5px;
+  font-size: 18px;
 }
 #todo-form input::placeholder {
   color: #bbb;
+  font-size: 18px;
 }
 /* + 아이콘 */
 #todo-form #plusIcon {
   position: fixed;
-  top: 21.2vh;
+  top: 21vh;
   transform:translateY(-50%);
   right: 30vw;
 
-  font-size: 30px;
+  font-size: 40px;
   color: #28f;
 }
 #todo-form #plusIcon:hover {
@@ -102,10 +104,10 @@ body {
 }
 /* todo list */
 #todo-Box #todo-list {
-  width: 75%;
+  width: 80%;
   padding-left: 10%;
-  color: #666;
-  font-size: 14px;
+  color: #333;
+  font-size: 17px;
 }
 #todo-Box #todo-list li {
   position: relative;
@@ -121,11 +123,11 @@ body {
 }
 #todo-Box #todo-list li span.material-icons {
   position: absolute;
-  right: -10%;
+  right: -15%;
   top: 50%;
   transform:translateY(-50%);
-  color: #888;
-  font-size: 20px;
+  color: #aaa;
+  font-size: 27px;
 }
 #todo-Box #todo-list li span.material-icons:hover {
   color: #333;
@@ -148,11 +150,12 @@ body {
 #icon a span {
   color: #fff;
   margin: 0 2%;
-  font-size: 35px;
+  font-size: 40px;
 }
 #icon a span:hover {
   color: #dfdfdf;
   transform:scale(1.1);
+  transition: 0.1s;
 }
 
 
@@ -164,22 +167,24 @@ body {
   left: 1%;
   bottom: 1%;
   margin: 0;
-  color: #fff;
+  color: #dfdfdf;
   padding-top: 0.1%;
-  border-top: 1px solid white;
-  font-size: 17px;
+  border-top: 1px solid #fff;
+  font-size: 25px;
 }
 /* 날씨 */
 #weather {
   position: fixed;
   left: 1%;
-  bottom: 7%;
-  color: #fff;
-  font-size: 13px;
+  bottom: 6%;
+  color: #dfdfdf;
+  font-size: 16px;
 }
 #weather img {
   position: absolute;
-  left: 1%;
-  bottom: 9%;
-  width: 80px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  width: 90px;
 }
