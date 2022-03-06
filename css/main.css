@@ -9,14 +9,12 @@ body {
   background-repeat : no-repeat;
   background-size : cover;
 }
-
-
 .hidden {
   display: none;
 }
 
 
-/* 유저 이름 */
+/* 유저 이름 입력 */
 #name-form {
   text-align: right;
   margin-bottom: 30px;
@@ -30,7 +28,7 @@ body {
   margin-top: 50px;
   margin-right: 10px;
   font-size: 30px;
-  color: #999;
+  color: #666;
 }
 #name-form input:hover {
   width: 550px;
@@ -47,13 +45,15 @@ body {
   color: #bbb;
   padding-left: 10px;
 }
-
+/* 인사말 출력 */
 #title-name {
   text-align: right;
   font-size: 70px;
   margin-top: 70px;
   margin-right: 50px;
+  color: #456;
 }
+
 
 
 /* 이동 아이콘 */
@@ -61,22 +61,19 @@ body {
   text-align: right;
   color: #456;
 }
-#icon span:first-child {
-  font-size: 50px;
-  margin: 10px 120px 50px 0;
+#icon a {
+  text-decoration: none;
+  color: inherit;
 }
-#icon span:first-child:hover {
+#icon span {
+  font-size: 50px;
+  margin: 10px 90px 50px 130px;
+}
+#icon a span:hover {
   transform:scale(1.1);
   transition: 0.1s;
 }
-#icon span:last-child {
-  font-size: 50px;
-  margin: 10px 90px 50px 120px;
-}
-#icon span:last-child:hover {
-  transform:scale(1.1);
-  transition: 0.1s;
-}
+
 
 
 /* 명언 */
@@ -95,6 +92,7 @@ body {
 }
 
 
+
 /* 시계 */
 #clock {
   position: fixed;
@@ -104,6 +102,7 @@ body {
   padding-top: 10px;
   border-top: 1px solid white;
 }
+
 
 
 /* 날씨 */
