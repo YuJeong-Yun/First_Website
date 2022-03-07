@@ -40,8 +40,6 @@ body {
   padding: 0 0 0 2%;
 
   width: 45vw;
-  min-width: 300px;
-  max-width: 800px;
   height: 8vh;
   
   border: none;
@@ -90,8 +88,6 @@ body {
   bottom: 0;
 
   width: 45vw;
-  min-width: 300px;
-  max-width: 800px;
   height: 50vh;
   background-color: #fff;
   opacity: 0.95;
