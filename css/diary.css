@@ -3,32 +3,30 @@
     font-family: 'IBM Plex Sans KR', sans-serif;
     box-sizing: border-box;
   }
+/* 눈 오는 효과 */
+body {
+  background: linear-gradient(to bottom, #8c83af, #FFFFFF);
+  height: auto !important;
+  animation: snow 20s linear infinite;
+  /*백그라운드 이미지 원근감느낌 이미지*/
+  background-image:url('https://cdn.discordapp.com/attachments/460145928850898945/515694458633846831/snow.png'), 
+  url("https://cdn.discordapp.com/attachments/460145928850898945/515694460668084274/snow3.png"), 
+  url("https://cdn.discordapp.com/attachments/460145928850898945/515694462278828073/snow2.png");
+  background-color: #dfdfdf;
+}
+/* 뒷배경 움직이는 애니메이션 */
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
 
-
-/* 시계 */
-#clock {
-    position: fixed;
-    left: 1%;
-    bottom: 1%;
-    margin: 0;
-    color: #555;
-    padding-top: 0.1%;
-    border-top: 1px solid #fff;
-    font-size: 25px;
-  }
-  /* 날씨 */
-  #weather {
-    position: fixed;
-    left: 1%;
-    bottom: 6%;
-    color: #555;
-    font-size: 16px;
-  }
-  #weather img {
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    bottom: 50%;
-    width: 90px;
+/* 하단 이미지 삽입 */
+#backgroundImg {
+  height: 15vh;
+  width: 100vw;
+  background-image: url('../img/diary.jpg');
+  background-repeat:repeat-x;
+  background-size : contain;
+  position: fixed;
+  bottom: -1.5%;
   }
