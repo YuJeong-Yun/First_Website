@@ -23,4 +23,5 @@ modeButton.addEventListener("click", turnAnotherMode);
 const savedMode = localStorage.getItem(NOW_MODE);
 if(savedMode == "dark") {
   modeCss.href = "css/dark_theme.css";
+  modeButton.innerText = "라이트 모드";
 }

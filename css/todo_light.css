@@ -6,7 +6,7 @@
 /* 배경 이미지 */
 body {
   height: 100vh;
-  background-image: url('../img/todo_dark.jpg');
+  background-image: url('../img/todo_light.jpg');
   background-repeat : no-repeat;
   background-size : cover;
   overflow: hidden;
@@ -184,6 +184,36 @@ body {
   bottom: 50%;
   width: 90px;
 }
+
+
+
+/* 다크 모드 버튼 */
+#turnModeTodo {
+  position: fixed;
+  right: 2%;
+  bottom: 4%;
+  width: 80px;
+  height: 30px;
+  background-color: #444;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  color: #ddd;
+  font-weight: 900;
+  box-shadow: 2px 2px 2px 2px #888;
+}
+#turnModeTodo:hover {
+  width: 85px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 13px;
+
+  background-color: #222;
+  transition: 0.1s;
+}
+
 
 
 

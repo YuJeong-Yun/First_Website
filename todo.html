@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="css/todo.css">
+  <link id="todoCss" rel="stylesheet" href="css/todo_light.css">
   <title>To-Do</title>
 </head>
 <body>
@@ -32,7 +32,7 @@
     <img src="" alt="날씨">
   </div>
   <h2 id="clock">00:00:00</h2>
-
+  <button id="turnModeTodo">다크 모드</button>
   <!-- 별 내리는 효과 -->
   <div class="top">
     <div class="shooting-stars">
@@ -42,9 +42,10 @@
       <div class="shooting-star shooting-star--meh"></div>
     </div>
   </div>
-
+ 
   <script src="js/clock.js"></script>
   <script src="js/weather.js"></script>
   <script src="js/todo.js"></script>
+  <script src="js/todo_mode.js"></script>
 </body>
 </html>
