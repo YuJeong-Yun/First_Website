@@ -1,0 +1,162 @@
+/* 다크 모드 css */
+/* 폰트 */
+* {
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url('../img/main_dark.jpg');
+  background-repeat : no-repeat;
+  background-size : cover;
+  overflow: hidden;
+}
+.hidden {
+  display: none;
+}
+
+
+/* 유저 이름 입력 */
+#name-form {
+  text-align: right;
+  margin-bottom: 3%;
+  margin-right: 2%;
+}
+#name-form input {
+  width: 35%;
+  line-height: 70px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 4%;
+  padding-left: 20px;
+  font-size: 30px;
+  background-color: #4f554f;
+  color: #bbb;
+}
+#name-form input:hover {
+  width: 37%;
+  line-height: 75px;
+  transition: 0.2s;
+}
+#name-form input:focus {
+  width: 37%;
+  line-height: 75px;
+}
+#name-form input::placeholder {
+  font-size: 25px;
+  color: #bbb;
+  padding-left: 10px;
+}
+/* 인사말 출력 */
+#title-name {
+  text-align: right;
+  font-size: 60px;
+  margin: 3% 3%;
+  color: #889898;
+  animation: fadein 1s;
+}
+@keyframes fadein {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+
+/* 이동 아이콘 */
+#icon {
+  text-align: right;
+  color: #9a9;
+}
+#icon a {
+  text-decoration: none;
+  color: inherit;
+}
+#icon span {
+  font-size: 40px;
+  margin: 0.5% 3% 3%;
+}
+#icon a span:hover {
+  transform:scale(1.1);
+  transition: 0.1s;
+  color: #bcb;
+}
+
+
+
+/* 명언 */
+#quotes {
+  text-align: right;
+  margin-right: 2%;
+  color: #ccc;
+}
+#quotes span:first-child {
+  font-size: 17px;
+  padding-bottom: 1%;
+  border-bottom: 1px dashed #ccc;
+}
+#quotes span:last-child {
+  font-size: 13px;
+}
+
+
+
+/* 시계 */
+#clock {
+  position: fixed;
+  left: 1%;
+  bottom: 1%;
+  margin: 0;
+  color: #ddd;
+  padding-top: 0.1%;
+  border-top: 1px solid #fff;
+  font-size: 25px;
+}
+/* 날씨 */
+#weather {
+  position: fixed;
+  left: 1%;
+  bottom: 6%;
+  color: #ddd;
+  font-size: 16px;
+}
+#weather img {
+  position: absolute;
+  margin: 0 auto;
+  left: -10%;
+  right: 0;
+  bottom: 50%;
+  width: 90px;
+}
+
+
+
+/* 라이트 모드 버튼 */
+#turnMode {
+  position: fixed;
+  right: 2%;
+  bottom: 4%;
+  width: 80px;
+  height: 30px;
+  background-color: #eee;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  color: #666;
+  font-weight: 900;
+  box-shadow: 2px 2px 2px 2px #aaa;
+}
+#turnMode:hover {
+  width: 85px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 13px;
+
+  background-color: #cfcfcf;
+  transition: 0.1s;
+}

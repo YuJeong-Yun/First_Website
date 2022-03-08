@@ -6,7 +6,7 @@
 /* 배경 이미지 */
 body {
   height: 100vh;
-  background-image: url('../img/todo.jpg');
+  background-image: url('../img/todo_dark.jpg');
   background-repeat : no-repeat;
   background-size : cover;
   overflow: hidden;
@@ -179,7 +179,7 @@ body {
 #weather img {
   position: absolute;
   margin: 0 auto;
-  left: 0;
+  left: -10%;
   right: 0;
   bottom: 50%;
   width: 90px;

@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="css/main.css">
+  <link id="mainCss" rel="stylesheet" href="css/light_theme.css">
   <title>Your Diary</title>
 </head>
 <body>
@@ -16,12 +16,7 @@
     <input required maxlength="10" placeholder="Please Enter your name!" type="text">
   </form>
   <h1 class="hidden" id="title-name"></h1>
-
-  <!-- <span id="homeIcon" class="material-icons">home</span> -->
   <div id="icon">
-    <a href="diary.html">
-      <span class="material-icons">edit_calendar</span>
-    </a>
     <a href="todo.html">
       <span class="material-icons">fact_check</span>
     </a>
@@ -36,10 +31,11 @@
     <img src="" alt="날씨">
   </div>
   <h2 id="clock">00:00:00</h2>
+  <button id="turnMode">다크 모드</button>
   <script src="js/greeting.js"></script>
   <script src="js/clock.js"></script>
   <script src="js/quotes.js"></script>
   <script src="js/weather.js"></script>
-  <!-- <script src="js/background.js"></script> -->
+  <script src="js/mode.js"></script>
 </body>
 </html>

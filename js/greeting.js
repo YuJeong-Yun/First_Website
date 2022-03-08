@@ -1,6 +1,6 @@
-const nameForm = document.querySelector("#name-form");
+const nameForm = document.getElementById("name-form");
 const nameInput = document.querySelector("#name-form input");
-const titleName = document.querySelector("#title-name");
+const titleName = document.getElementById("title-name");
 
 // localStorage에 저장한 유저 이름 key
 const USERNAME_KEY = "username";
