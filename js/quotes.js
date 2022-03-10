@@ -44,6 +44,7 @@ const quotes = [
 const quote = document.querySelector("#quotes span:first-child");
 const author = document.querySelector("#quotes span:last-child");
 
+// 랜덤 숫자 받아오기
 const random = Math.floor(Math.random()*quotes.length);
 
 quote.innerText = quotes[random].quotes;

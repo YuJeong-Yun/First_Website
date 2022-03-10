@@ -12,26 +12,34 @@
   <title>Your Diary</title>
 </head>
 <body>
+  <!-- 유저 이름 받아오기 -->
   <form class="hidden" id="name-form">
     <input required maxlength="10" placeholder="Please Enter your name!" type="text">
   </form>
+  <!-- 인사말 출력 -->
   <h1 class="hidden" id="title-name"></h1>
+  <!-- Todo 이동 아이콘 -->
   <div id="icon">
     <a href="todo.html">
       <span class="material-icons">fact_check</span>
     </a>
   </div>
+  <!-- 명언 랜덤 출력 -->
   <div id="quotes">
     <span></span><br><br>
     <span></span>
   </div>
+  <!-- 날씨 출력 -->
   <div id="weather">
     <span></span>
     <span></span>
     <img src="" alt="날씨">
   </div>
+  <!-- 현재 시간 출력 -->
   <h2 id="clock">00:00:00</h2>
+  <!-- 다크 모드 선택 -->
   <button id="turnMode">다크 모드</button>
+  
   <script src="js/greeting.js"></script>
   <script src="js/clock.js"></script>
   <script src="js/quotes.js"></script>

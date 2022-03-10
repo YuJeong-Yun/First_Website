@@ -12,25 +12,30 @@
   <title>To-Do</title>
 </head>
 <body>
+  <!-- To do 입력창 -->
   <form id="todo-form">
     <h1>To-do</h1>
     <input maxlength="50" placeholder="Please enter your To-do" type="text">
     <span id="plusIcon" class="material-icons">add_circle</span>
   </form>
   <hr id="line">
+  <!-- 입력한 To do 출력 -->
   <div id="todo-Box" class="hidden">
     <ul id="todo-list"></ul>
   </div>
+  <!-- 홈 이동 아이콘 -->
   <div id="icon">
     <a href="index.html">
       <span id="home" class="material-icons">home</span>
     </a>
   </div>
+  <!-- 날씨 출력 -->
   <div id="weather">
     <span></span>
     <span></span>
     <img src="" alt="날씨">
   </div>
+  <!-- 현재 시간 출력 -->
   <h2 id="clock">00:00:00</h2>
   <button id="turnModeTodo">다크 모드</button>
   <!-- 별 내리는 효과 -->

@@ -466,3 +466,229 @@ body {
     left: calc(100% + 100px);
   }
 }
+
+
+
+
+
+/* 반응형 */
+/* 모바일 */
+@media (max-width: 470px){
+  #todo-form h1 {
+    color: #fff;
+    margin: 0;
+    position: fixed;
+    left: 27.5vw;
+    top: 7vh;
+    font-size: 40px;
+  }
+  /* todo 입력창 */
+  #todo-form input {
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 17vh;
+    padding: 0 0 0 2%;
+  
+    width: 45vw;
+    height: 8vh;
+    
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  #todo-form input::placeholder {
+    color: #bbb;
+    font-size: 18px;
+  }
+  /* + 아이콘 */
+  #todo-form #plusIcon {
+    position: fixed;
+    top: 21vh;
+    transform:translateY(-50%);
+    right: 30vw;
+  
+    font-size: 40px;
+    color: #28f;
+  }
+  #todo-form #plusIcon:hover {
+    color: #06d;
+  }
+  /* 구분선 */
+  #line {
+    width: 50vw;
+    height: 1px;
+    position: fixed;
+    margin: 0 auto;
+    top: 28vh;
+    left: 0;
+    right: 0;
+    background-color: #fff;  
+    border: 0;
+  }
+  
+  
+  
+  /* todo list 배경*/
+  #todo-Box {
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 33%;
+    bottom: 0;
+  
+    width: 45vw;
+    height: 50vh;
+    background-color: #fff;
+    opacity: 0.95;
+    border-radius: 5px;
+    overflow: scroll;
+  }
+  /* 스크롤바 숨기기 */
+  #todo-Box::-webkit-scrollbar {
+    display:none;
+  }
+  /* todo list */
+  #todo-Box #todo-list {
+    width: 80%;
+    padding-left: 10%;
+    color: #333;
+    font-size: 17px;
+  }
+  #todo-Box #todo-list li {
+    position: relative;
+    margin: 5% 0;
+    list-style: none;
+    border-bottom: 1px #efefef solid;
+  }
+  #todo-Box #todo-list li input{
+    position: absolute;
+    left: -8%;
+    top: 50%;
+    transform:translateY(-50%);
+  }
+  #todo-Box #todo-list li span.material-icons {
+    position: absolute;
+    right: -15%;
+    top: 50%;
+    transform:translateY(-50%);
+    color: #aaa;
+    font-size: 27px;
+  }
+  #todo-Box #todo-list li span.material-icons:hover {
+    color: #333;
+  }
+  
+  
+  /* 이동 아이콘 */
+  #icon {
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+    text-align: center;
+  }
+  #icon a {
+    text-decoration: none;
+    color: inherit;
+  }
+  #icon a span {
+    color: #fff;
+    margin: 0 2%;
+    font-size: 40px;
+  }
+  #icon a span:hover {
+    color: #dfdfdf;
+    transform:scale(1.1);
+    transition: 0.1s;
+  }
+  
+  
+  
+  
+  /* 시계 */
+  #clock {
+    font-size: 17px;
+  }
+  /* 날씨 */
+  #weather {
+    bottom: 5%;
+    font-size: 15px;
+  }
+  #weather img {
+    left: -11%;
+    width: 60px;
+  }
+
+  /* 다크 모드 버튼 */
+  #turnMode {
+    bottom: 2%;
+    width: 65px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 10px;
+  
+}
+/* 테블릿 */
+@media (min-width: 471px) and (max-width: 767px) {
+  /* 시계 */
+  #clock {
+    font-size: 13px;
+  }
+  /* 날씨 */
+  #weather {
+    bottom: 27px;
+    font-size: 13px;
+  }
+  #weather img {
+    left: -20%;
+    width: 50px;
+  }
+ 
+  /* 다크 모드 버튼 */
+  #turnMode {
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 8px;
+   }
+   #turnMode:hover {
+     width: 65px;
+     height: 35px;
+     line-height: 35px;
+     font-size: 13px;
+   }
+}
+/* 테블릿 가로 */
+@media (min-width: 768px) and (max-width: 1199px) {
+ /* 시계 */
+ #clock {
+  font-size: 15px;
+}
+/* 날씨 */
+#weather {
+  bottom: 5%;
+  font-size: 14px;
+}
+#weather img {
+  left: -30%;
+  width: 60px;
+}
+
+/* 다크 모드 버튼 */
+#turnMode {
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 8px;
+ }
+ #turnMode:hover {
+   width: 65px;
+   height: 30px;
+   line-height: 35px;
+   font-size: 11px;
+ }
+}
