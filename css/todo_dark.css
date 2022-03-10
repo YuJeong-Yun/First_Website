@@ -174,7 +174,7 @@ body {
 #weather {
   position: fixed;
   left: 1%;
-  bottom: 6%;
+  bottom: 50px;
   color: #ddd;
   font-size: 16px;
 }
@@ -466,5 +466,236 @@ body {
   }
   100% {
     left: calc(100% + 100px);
+  }
+}
+
+
+
+
+
+/* 반응형 */
+/* 모바일 */
+@media (max-width: 470px){
+  /* To-do 제목 */
+  #todo-form h1 {
+    left: 15vw;
+    font-size: 25px;
+  }
+  /* todo 입력창 */
+  #todo-form input {
+    width: 70vw;
+    padding-right: 10%;
+  }
+  #todo-form input::placeholder {
+    color: #bbb;
+    font-size: 15px;
+  }
+  /* + 아이콘 */
+  #todo-form #plusIcon {
+    right: 18vw;
+    font-size: 30px;
+  }
+  /* 구분선 */
+  #line {
+    width: 70vw;
+  }
+
+  /* todo list 배경*/
+  #todo-Box {
+    width: 70vw;
+    height: 50vh;
+  }
+  /* todo list */
+  #todo-Box #todo-list {
+    font-size: 15px;
+  }
+  #todo-Box #todo-list li input{
+    left: -11%;
+  }
+  #todo-Box #todo-list li span.material-icons {
+    font-size: 23px;
+  }
+
+  /* 이동 아이콘 */
+   #icon a span {
+    font-size: 35px;
+  }
+
+  /* 시계 */
+  #clock {
+    font-size: 15px;
+  }
+  /* 날씨 */
+  #weather {
+    bottom: 27px;
+    font-size: 14px;
+  }
+  #weather img {
+    left: -11%;
+    width: 60px;
+  }
+
+  /* 다크 모드 버튼 */
+  #turnMode {
+    width: 65px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 8px;
+  }
+  #turnMode:hover {
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 11px;
+  }
+}
+/* 테블릿 세로 */
+@media (min-width: 471px) and (max-width: 767px) {
+  /* To-do 제목 */
+  #todo-form h1 {
+    top: 4vh;
+    left: 20vw;
+    font-size: 32px;
+  }
+  /* todo 입력창 */
+  #todo-form input {
+    width: 60vw;
+    padding-right: 10%;
+  }
+  #todo-form input::placeholder {
+    color: #bbb;
+    font-size: 17px;
+  }
+  /* + 아이콘 */
+  #todo-form #plusIcon {
+    right: 22vw;
+    font-size: 30px;
+  }
+  /* 구분선 */
+  #line {
+    width: 60vw;
+  }
+
+  /* todo list 배경*/
+  #todo-Box {
+    width: 60vw;
+    height: 50vh;
+  }
+  /* todo list */
+  #todo-Box #todo-list {
+    font-size: 16px;
+  }
+  #todo-Box #todo-list li input{
+    left: -11%;
+  }
+  #todo-Box #todo-list li span.material-icons {
+    font-size: 25px;
+  }
+
+  /* 이동 아이콘 */
+   #icon a span {
+    font-size: 40px;
+  }
+  
+  /* 시계 */
+  #clock {
+    font-size: 15px;
+  }
+  /* 날씨 */
+  #weather {
+    bottom: 30px;
+    font-size: 14px;
+  }
+  #weather img {
+    left: -20%;
+    width: 50px;
+  }
+
+ /* 다크 모드 버튼 */
+ #turnMode {
+  width: 65px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 8px;
+ }
+ #turnMode:hover {
+   width: 70px;
+   height: 30px;
+   line-height: 30px;
+   font-size: 11px;
+ }
+}
+/* 테블릿 가로 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* To-do 제목 */
+  #todo-form h1 {
+    left: 22.5vw;
+    font-size: 40px;
+  }
+  /* todo 입력창 */
+  #todo-form input {
+    width: 55vw;
+    padding-right: 9%;
+  }
+  #todo-form input::placeholder {
+    color: #bbb;
+    font-size: 18px;
+  }
+  /* + 아이콘 */
+  #todo-form #plusIcon {
+    right: 25vw;
+    font-size: 35px;
+  }
+  /* 구분선 */
+  #line {
+    width: 55vw;
+  }
+
+  /* todo list 배경*/
+  #todo-Box {
+    width: 55vw;
+    height: 50vh;
+  }
+  /* todo list */
+  #todo-Box #todo-list {
+    font-size: 17px;
+  }
+  #todo-Box #todo-list li input{
+    left: -10%;
+  }
+  #todo-Box #todo-list li span.material-icons {
+    font-size: 27px;
+  }
+
+  /* 이동 아이콘 */
+   #icon a span {
+    font-size: 40px;
+  }
+  /* 시계 */
+  #clock {
+   font-size: 18px;
+  }
+  /* 날씨 */
+  #weather {
+    bottom: 35px;
+    font-size: 16px;
+  }
+  #weather img {
+    left: -20%;
+    width: 60px;
+  }
+ 
+  /* 다크 모드 버튼 */
+  #turnMode {
+   width: 65px;
+   height: 25px;
+   line-height: 25px;
+   font-size: 8px;
+  }
+  #turnMode:hover {
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 11px;
   }
 }

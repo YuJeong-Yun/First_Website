@@ -277,17 +277,17 @@ body {
    
   /* 시계 */
   #clock {
-   font-size: 15px;
- }
- /* 날씨 */
- #weather {
-   bottom: 27px;
-   font-size: 14px;
- }
- #weather img {
-   left: -20%;
-   width: 50px;
- }
+    font-size: 15px;
+  }
+  /* 날씨 */
+  #weather {
+    bottom: 30px;
+    font-size: 14px;
+  }
+  #weather img {
+    left: -20%;
+    width: 50px;
+  }
 
  /* 다크 모드 버튼 */
  #turnMode {
@@ -340,17 +340,17 @@ body {
    
   /* 시계 */
   #clock {
-   font-size: 16px;
- }
- /* 날씨 */
- #weather {
-   bottom: 27px;
-   font-size: 15px;
- }
- #weather img {
-   left: -20%;
-   width: 50px;
- }
+   font-size: 18px;
+  }
+  /* 날씨 */
+  #weather {
+    bottom: 35px;
+    font-size: 16px;
+  }
+  #weather img {
+    left: -20%;
+    width: 60px;
+  }
  
   /* 다크 모드 버튼 */
   #turnMode {
